@@ -1,0 +1,361 @@
+body {
+  font-family: "Ubuntu", sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(
+    to right,
+    #1c1c1c,
+    #4b0082,
+    #551a8b
+  ); /* Black to various shades of purple */
+  color: #fff;
+}
+
+header {
+  height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(85, 26, 139, 0.8); /* Semi-transparent purple */
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  animation: fadeInHeader 1s ease-in-out forwards;
+  background-image: url("https://images.pexels.com/photos/459654/pexels-photo-459654.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+  background-size: cover;
+  background-position: top;
+
+  background-repeat: no-repeat;
+}
+
+.header-content {
+  background-color: #6a1b9a;
+  flex-grow: 1;
+  text-align: left;
+  padding-left: 15%;
+
+  height: 200px;
+  border-radius: 150px;
+  box-shadow: 10px 10px rgba(0, 0, 0, 0.2);
+  transform: skewY(-5deg);
+}
+
+.profile-image {
+  max-width: 30%;
+  height: auto;
+  border-radius: 50%;
+}
+
+.contact-button {
+  background-color: #6a1b9a; /* Purple */
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+}
+
+.contact-button:hover {
+  background-color: #4b0082; /* Darker purple on hover */
+}
+
+section {
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.1); /* Slightly transparent white */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  opacity: 0;
+}
+
+@keyframes fadeInHeader {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInAboutMe {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInProjects {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInContact {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+section:nth-child(2) {
+  animation: fadeInAboutMe 1s ease-in-out forwards;
+  animation-delay: 0.5s;
+}
+
+section:nth-child(3) {
+  animation: fadeInProjects 1s ease-in-out forwards;
+  animation-delay: 1s;
+}
+
+section:nth-child(4) {
+  animation: fadeInContact 1s ease-in-out forwards;
+  animation-delay: 1.5s;
+}
+section:nth-child(5) {
+  animation: fadeInContact 1s ease-in-out forwards;
+  animation-delay: 1.5s;
+}
+
+h1,
+h2,
+h3 {
+  color: #fff;
+}
+
+p {
+  text-align: justify;
+  color: #e0e0e0; /* Light gray for better readability */
+}
+
+.project,
+.project1 {
+  margin-bottom: 40px;
+}
+
+.project img {
+  max-width: 100%;
+  border-radius: 8px;
+  margin-top: 10px;
+}
+
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  color: #fff;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #551a8b; /* Purple */
+  border-radius: 4px;
+  box-sizing: border-box;
+  color: #1c1c1c; /* Dark gray for better readability */
+  background-color: #fff;
+}
+
+button {
+  background-color: #6a1b9a; /* Purple */
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+i {
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  -webkit-animation: "screen" infinite;
+  animation: "screen" infinite;
+}
+
+i:nth-child(1) {
+  top: 20px;
+  left: 30px;
+  background: -webkit-radial-gradient(
+    center,
+    ellipse cover,
+    rgba(2, 226, 252, 0.65) 0%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  box-shadow: 0px 0px 5px 0px #02e2fc;
+  animation-duration: 5s;
+}
+
+i:nth-child(2) {
+  top: 420px;
+  left: 30px;
+  background: -webkit-radial-gradient(
+    center,
+    ellipse cover,
+    rgba(250, 160, 2, 0.65) 0%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  box-shadow: 0px 0px 5px 0px #faa002;
+  animation-duration: 21s;
+}
+
+i:nth-child(3) {
+  top: 550px;
+  left: 300px;
+  background: -webkit-radial-gradient(
+    center,
+    ellipse cover,
+    rgba(20, 252, 2, 0.65) 0%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  box-shadow: 0px 0px 5px 0px #14fc02;
+  animation-duration: 5s;
+}
+
+i:nth-child(4) {
+  top: 5px;
+  left: 330px;
+  background: -webkit-radial-gradient(
+    center,
+    ellipse cover,
+    rgba(252, 2, 196, 0.65) 0%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  box-shadow: 0px 0px 5px 0px #fc02c4;
+  animation-duration: 4s;
+}
+
+section .iconSkills {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.iconSkills img {
+  width: 50px;
+  height: auto;
+}
+.iconSkills {
+  width: 100%;
+
+  text-align: center;
+  padding: 20px;
+}
+
+.iconSkills img {
+  max-width: 100px; /* Adjust the max-width as needed */
+  margin: 10px; /* Adjust the margin as needed */
+}
+
+@keyframes screen {
+  from {
+    opacity: 0;
+  }
+
+  25% {
+    opacity: 0.3;
+    transform: scale3d(3, 3, 4);
+  }
+
+  50% {
+    opacity: 0.75;
+  }
+
+  75% {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+/* Add this to your CSS file or in a <style> tag in your HTML */
+
+/* Add this to your CSS file or in a <style> tag in your HTML */
+/* Add this to your CSS file or in a <style> tag in your HTML */
+
+/* Style for the success message */
+.success-message {
+  background-color: #6f42c1; /* Purple background color */
+  color: #28a745; /* Green text color */
+  padding: 15px;
+  margin-top: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  animation: fadeInOut 4s ease-in-out;
+}
+a:link,
+a:visited {
+  text-decoration: underline;
+  color: white;
+  cursor: pointer;
+}
+
+/* Keyframes for fadeInOut animation */
+@keyframes fadeInOut {
+  0%,
+  100% {
+    opacity: 0;
+  }
+  25%,
+  75% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+    animation-timing-function: ease-out;
+  }
+}
+
+/* Add a class for smooth fade-out transition */
+.fade-out {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out; /* Adjust the duration as needed */
+}
+
+img.coder {
+  width: 150px;
+  height: auto;
+  border-radius: 30px;
+}
+.code {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: auto;
+  justify-content: space-between;
+}
+figure {
+  padding: 0;
+}
